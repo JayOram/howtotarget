@@ -29,6 +29,10 @@
       <a href="{{ contributor.url }}" class="hack__contributor">
         {{ contributor.name }}
       </a>
+      Updated 
+      <time class="hack__date" datetime="{{ hack.date }}" title="{{ hack.date | date_to_long_string }}">
+        {{ hack.last_modified_at }}
+      </time>
     </p>
   </div>
 </article>
